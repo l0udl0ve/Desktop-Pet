@@ -3,7 +3,7 @@
 
 ## **功能**
 ### 1、鼠标位置捕捉，眼动跟随光标
-![功能1](https://tutu.to/image/04hzQ)
+![功能1](https://tutu.to/image/1.04hzQ)
 
 ### 2、拖拽事件捕捉，趣味文件回收
 ![功能2](https://tutu.to/image/04N5q)
