@@ -3,16 +3,16 @@
 
 ## **功能**
 ### 1、鼠标位置捕捉，眼动跟随光标
-<img src="./demo/1.gif" width="320" height="240" />
+![功能1](https://github.com/l0udl0ve/Desktop-Pet/blob/main/demo/1.gif)
 
 ### 2、拖拽事件捕捉，趣味文件回收
-<img src="./demo/2.gif" width="320" height="240" />
+![功能2](https://github.com/l0udl0ve/Desktop-Pet/blob/main/demo/2.gif)
 
 ### 3、窗口标题隐藏，最小化到托盘
-<img src="./demo/3.gif" width="320" height="240" />
+![功能3](https://github.com/l0udl0ve/Desktop-Pet/blob/main/demo/3.gif)
 
 ### 4、双击菜单打开，插件动态加载
-<img src="./demo/1.gif" width="320" height="240" />
+![功能4](https://github.com/l0udl0ve/Desktop-Pet/blob/main/demo/4.gif)
 
 ### 5、开机自动启动，一键应用安装
 
