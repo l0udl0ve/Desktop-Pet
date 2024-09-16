@@ -2,17 +2,17 @@
 本项目是一个基于python标准库<font color="#00b0f0">tkinter</font>为<font color="#ff0000">Windows操作系统</font>开发的一个罗小黑桌宠，旨在更为便捷地对用户编写的python脚本进行管理。支持自编写插件。
 
 ## **功能**
-### 1、鼠标位置捕捉，眼动跟随光标
-![功能1](https://tutu.to/image/1.04hzQ)
+### 1、桌宠自由拖动，眼动跟随光标
+![功能1](https://pic.imgdb.cn/item/66e82bd6d9c307b7e973923e.gif)
 
 ### 2、拖拽事件捕捉，趣味文件回收
-![功能2](https://tutu.to/image/04N5q)
+![功能2](https://pic.imgdb.cn/item/66e82bd6d9c307b7e97392e8.gif)
 
 ### 3、窗口标题隐藏，最小化到托盘
-![功能3](https://tutu.to/image/04PGr)
+![功能3](https://pic.imgdb.cn/item/66e82bd6d9c307b7e973935b.gif)
 
 ### 4、双击菜单打开，插件动态加载
-![功能4](https://tutu.to/image/047v5)
+![功能4](https://pic.imgdb.cn/item/66e82bd6d9c307b7e9739334.gif)
 
 ### 5、开机自动启动，一键应用安装
 
