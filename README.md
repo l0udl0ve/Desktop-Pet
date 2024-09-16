@@ -3,17 +3,16 @@
 
 ## **功能**
 ### 1、桌宠自由拖动，眼动跟随光标
-<img src="https://pic.imgdb.cn/item/66e82bd6d9c307b7e973923e.gif" alt="功能1">
+![](https://raw.githubusercontent.com/l0udl0ve/imageWare/master/1.gif)
 
 ### 2、拖拽事件捕捉，趣味文件回收
-<img src="https://pic.imgdb.cn/item/66e82bd6d9c307b7e97392e8.gif" alt="功能2">
+![](https://raw.githubusercontent.com/l0udl0ve/imageWare/master/2.gif)
 
 ### 3、窗口标题隐藏，最小化到托盘
-[![](https://pic.imgdb.cn/item/66e82bd6d9c307b7e973935b.gif)](https://pic.imgdb.cn/item/66e82bd6d9c307b7e973935b.gif)
-<!-- <img src="https://pic.imgdb.cn/item/66e82bd6d9c307b7e973935b.gif" alt="功能3"> -->
+![](https://raw.githubusercontent.com/l0udl0ve/imageWare/master/3.gif)
 
 ### 4、双击菜单打开，插件动态加载
-<img src="https://pic.imgdb.cn/item/66e82bd6d9c307b7e9739334.gif" alt="功能4">
+![](https://raw.githubusercontent.com/l0udl0ve/imageWare/master/4.gif)
 
 ### 5、开机自动启动，一键应用安装
 
