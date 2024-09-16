@@ -2,7 +2,7 @@
    <h1> Desktop Pet </h1>
    <p>
     Desktop Pet | Windows桌宠 <br>
-      <code><b> v3.3 </b></code>
+      <code><b> ver 1.0.0 </b></code>
    </p>
    <p>
       <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/l0udl0ve/Desktop-Pet?label=Python">
