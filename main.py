@@ -7,9 +7,9 @@ import threading
 import importlib
 import pystray
 import windnd
+import src
 import sys
 import os
-
 
 WIDTH, HEIGHT = pt.size()
 taskbarHeight = 40
@@ -35,6 +35,7 @@ tan = [
     5.027339492125846
 ]
 
+
 def load_images(folder_path):
     image_list = []
     for x in os.listdir(folder_path):
@@ -45,10 +46,11 @@ def load_images(folder_path):
 
 class Pet:
     def __init__(self, player):
-        self.eyes = load_images('./src/eyes')
-        self.tails = load_images('./src/tails')
-        self.eat = load_images('./src/eat')
-        self.click = load_images('./src/click')
+        self.shellPath = os.path.abspath(os.path.dirname(sys.argv[0]))
+        self.eyes = load_images(self.shellPath + '\\src\\eyes')
+        self.tails = load_images(self.shellPath + '\\src\\tails')
+        self.eat = load_images(self.shellPath + '\\src\\eat')
+        self.click = load_images(self.shellPath + '\\src\\click')
 
         self.len_eyes = len(self.eyes)
         self.len_tails = len(self.tails)
@@ -59,7 +61,6 @@ class Pet:
         self._systray()
         self.isOpen = False
         self.iconDir = {}
-        # self.player.protocol('WM_DELETE_WINDOW', self._hide_window)
 
     def _eyes_play(self, element) -> None:
         x, y = pt.position()
@@ -108,7 +109,7 @@ class Pet:
         self.memu.destroy()
         self.memu = None
         self.isOpen = False
-            
+
     def _onclick(self, event) -> None:
         if self.isOpen:
             self._memu_destroy()
@@ -123,7 +124,7 @@ class Pet:
             self.memu = tk.Toplevel(self.player)
             self.memu.overrideredirect(True)
             self.memu.configure(bg='pink')
-            self.memu.geometry(f"{width}x{height}+{posX-width}+{posY}")
+            self.memu.geometry(f"{width}x{height}+{posX - width}+{posY}")
             self.memu.attributes('-transparentcolor', 'pink')
             self.memu.wm_attributes('-topmost', 1)
 
@@ -140,26 +141,29 @@ class Pet:
             self.canvas.configure(yscrollcommand=self.scrollbar.set, scrollregion=self.canvas.bbox("all"))
             self.scrollbar.config(command=self.canvas.yview)
 
-            self.close_img = tk.PhotoImage(file="./src/misc/close.png")
-            close = tk.Button(self.memu, image=self.close_img, bg='pink', relief='flat', cursor='hand2', command=self._hide_window)
+            self.close_img = tk.PhotoImage(self.shellPath + '\\src\\misc\\close.png')
+            close = tk.Button(self.memu, image=self.close_img, bg='pink', relief='flat', cursor='hand2',
+                              command=self._hide_window)
             close.place(relx=0, rely=0.775, relwidth=0.9, relheight=0.225)
 
             self.isOpen = True
 
     def _make_menu(self, window) -> None:
-        for path in os.listdir("./plugin"):
-            spec = importlib.util.spec_from_file_location("plugin", f"./plugin/{path}/main.py")
+        for path in os.listdir(self.shellPath + '\\plugin'):
+            spec = importlib.util.spec_from_file_location("plugin", self.shellPath + f"\\plugin\\{path}\\main.py")
             module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(module)
             plugin_class = getattr(module, "Plugin")
 
             plugin = plugin_class()
-            if os.path.exists(f"./plugin/{path}/icon.png"):
-                image = Image.open(f"./plugin/{path}/icon.png")
+            if os.path.exists(self.shellPath + f"\\plugin\\{path}\\icon.png"):
+                image = Image.open(self.shellPath + f"\\plugin\\{path}\\icon.png")
                 self.iconDir[path] = ImageTk.PhotoImage(image)
-                tk.Button(window, image=self.iconDir[path], relief='flat', overrelief='raised', cursor='hand2', command=plugin.run).pack(fill="x")
+                tk.Button(window, image=self.iconDir[path], relief='flat', overrelief='raised', cursor='hand2',
+                          command=plugin.run).pack(fill="x")
             else:
-                tk.Button(window, text=path[0].upper(), relief='flat', overrelief='raised', cursor='hand2', command=plugin.run).pack(fill="x")
+                tk.Button(window, text=path[0].upper(), relief='flat', overrelief='raised', cursor='hand2',
+                          command=plugin.run).pack(fill="x")
 
     def _ondrop(self, paths_raw) -> None:
         self.topWindow = tk.Label(self.player, bg='pink', bd=0)
@@ -185,7 +189,7 @@ class Pet:
         posY = new_y
 
         if self.memu:
-            self.memu.geometry(f"{50}x{200}+{posX-50}+{posY}")
+            self.memu.geometry(f"{50}x{200}+{posX - 50}+{posY}")
         self.player.geometry(s)
 
     def _systray(self):
@@ -194,7 +198,7 @@ class Pet:
             pystray.Menu.SEPARATOR,
             pystray.MenuItem('退出', self._quit)
         )
-        image = Image.open('./src/misc/icon.png')
+        image = Image.open(self.shellPath + '\\src\\misc\\icon.png')
         self.icon = pystray.Icon("icon", image, "桌宠", self.systray_menu)
         threading.Thread(target=self.icon.run, daemon=True).start()
 
