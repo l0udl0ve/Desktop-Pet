@@ -3,7 +3,7 @@
 
 ## **功能**
 ### 1、桌宠自由拖动，眼动跟随光标
-![](https://raw.githubusercontent.com/l0udl0ve/imageWare/master/1.gif)
+![](./demo/1.gif)
 
 ### 2、拖拽事件捕捉，趣味文件回收
 ![](https://raw.githubusercontent.com/l0udl0ve/imageWare/master/2.gif)
