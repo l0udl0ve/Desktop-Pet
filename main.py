@@ -38,7 +38,7 @@ tan = [
 
 def load_images(folder_path):
     image_list = []
-    for x in os.listdir(folder_path):
+    for x in os.listdir(folder_path):       # fixme: 通过os库加载图片的方法会导致图片顺序混乱，release版本已修正
         y = tk.PhotoImage(file=folder_path + '/' + x)
         image_list.append(y)
     return image_list
