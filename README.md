@@ -7,8 +7,6 @@
    <p>
       <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/l0udl0ve/Desktop-Pet?label=Python">
       <img alt="GitHub License" src="https://img.shields.io/github/license/l0udl0ve/Desktop-Pet?label=License"/>
-      <img alt="GitHub Workflow Status" src="https://img.shields.io/badge/学习狗牌-
-      _">
    </p>
 </div>
 
