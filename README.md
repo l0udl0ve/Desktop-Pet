@@ -3,16 +3,16 @@
 
 ## **功能**
 ### 1、桌宠自由拖动，眼动跟随光标
-![功能1](https://pic.imgdb.cn/item/66e82bd6d9c307b7e973923e.gif)
+<img src="https://pic.imgdb.cn/item/66e82bd6d9c307b7e973923e.gif" alt="功能1">
 
 ### 2、拖拽事件捕捉，趣味文件回收
-![功能2](https://pic.imgdb.cn/item/66e82bd6d9c307b7e97392e8.gif)
+<img src="https://pic.imgdb.cn/item/66e82bd6d9c307b7e97392e8.gif" alt="功能2">
 
 ### 3、窗口标题隐藏，最小化到托盘
-![功能3](https://pic.imgdb.cn/item/66e82bd6d9c307b7e973935b.gif)
+<img src="https://pic.imgdb.cn/item/66e82bd6d9c307b7e973935b.gif" alt="功能3">
 
 ### 4、双击菜单打开，插件动态加载
-![功能4](https://pic.imgdb.cn/item/66e82bd6d9c307b7e9739334.gif)
+<img src="https://pic.imgdb.cn/item/66e82bd6d9c307b7e9739334.gif" alt="功能4">
 
 ### 5、开机自动启动，一键应用安装
 
