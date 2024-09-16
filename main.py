@@ -35,26 +35,6 @@ tan = [
     5.027339492125846
 ]
 
-
-def load_gif(file_path):
-    images = []
-    with Image.open(file_path) as img:
-        try:
-            frame_count = 0
-            while True:
-                img.seek(frame_count)
-                frame_count += 1
-        except EOFError:
-            pass
-
-    for i in range(frame_count):
-        try:
-            img = tk.PhotoImage(file=file_path, format=f'gif -index {i}')
-            images.append(img)
-        except tk.TclError:
-            break
-    return images, frame_count
-
 def load_images(folder_path):
     image_list = []
     for x in os.listdir(folder_path):
@@ -64,7 +44,7 @@ def load_images(folder_path):
 
 
 class Pet:
-    def __init__(self, player, posX, posY):
+    def __init__(self, player):
         self.eyes = load_images('./src/eyes')
         self.tails = load_images('./src/tails')
         self.eat = load_images('./src/eat')
@@ -245,6 +225,6 @@ class Pet:
         windnd.hook_dropfiles(self.player, func=self._ondrop)
 
 
-body = Pet(root, posX, posY)
+body = Pet(root)
 body.play()
 root.mainloop()
