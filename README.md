@@ -1,3 +1,18 @@
+<div align="center" style="text-align:center">
+   <h1> Desktop Pet </h1>
+   <p>
+    Desktop Pet | Windows桌宠 <br>
+      <code><b> v3.3 </b></code>
+   </p>
+   <p>
+      <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/l0udl0ve/Desktop-Pet?label=Python">
+      <img alt="GitHub License" src="https://img.shields.io/github/license/l0udl0ve/Desktop-Pet?label=License"/>
+      <img alt="GitHub Workflow Status" src="https://img.shields.io/badge/学习狗牌-
+      _">
+   </p>
+</div>
+
+
 ## **概述**
 本项目是一个基于python标准库<font color="#00b0f0">tkinter</font>为<font color="#ff0000">Windows操作系统</font>开发的一个罗小黑桌宠，旨在更为便捷地对用户编写的python脚本进行管理。支持自编写插件。
 
