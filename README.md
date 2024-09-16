@@ -3,17 +3,16 @@
 
 ## **功能**
 ### 1、鼠标位置捕捉，眼动跟随光标
-![功能1](https://t.tutu.to/img/04hzQ)
+![功能1](https://tutu.to/image/04hzQ)
 
 ### 2、拖拽事件捕捉，趣味文件回收
-![功能2](https://github.com/l0udl0ve/Desktop-Pet/blob/main/demo/2.gif)
+![功能2](https://tutu.to/image/04N5q)
 
 ### 3、窗口标题隐藏，最小化到托盘
-![功能3](https://github.com/l0udl0ve/Desktop-Pet/blob/main/demo/3.gif)
+![功能3](https://tutu.to/image/04PGr)
 
 ### 4、双击菜单打开，插件动态加载
-<img src="./demo/1.gif" width="320" height="240" />
-![功能4](https://github.com/l0udl0ve/Desktop-Pet/blob/main/demo/4.gif)
+![功能4](https://tutu.to/image/047v5)
 
 ### 5、开机自动启动，一键应用安装
 
